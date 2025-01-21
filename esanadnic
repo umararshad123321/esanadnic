@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>E-Sanad | E-Register</title>
+
+    <!-- css -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="coustom/css/register.css" rel="stylesheet">
+    <link href="coustom/css/login.css" rel="stylesheet">
+    <link href="coustom/css/custom.css" rel="stylesheet">
+
+    <!-- template skin -->
+    <link href="css/default.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-validator/bootstrapValidator.css">
+
+
+
+
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom" class="e-register-background ">
+
+    <div id="wrapper">
+
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="top-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="cta-btn1">
+                            <ul>
+                                <li><a href="userlogin">Login</a></li>
+                                <li><a href="register">Registration</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container navigation">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+						<i class="fa fa-bars"></i>
+					</button>
+                    <a class="navbar-brand" href="index.jsp"> <img
+						src="img/dummy/logo_new.png" alt="">
+					</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="home">HOME</a></li>
+                        <li class="active"><a href="eregister">e-REGISTER</a></li>
+                        <li><img src="img/dummy/digital.png" alt="" style="margin:-15px 0px 0px 0px;"></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="row centered-form">
+            <div class="col-xs-12 col-sm-8 col-md-8 col-sm-offset-2 col-md-offset-2 Error-margin">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">e-Register</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form id="eregisterForm" name="eregisterForm" action="/eregisterverify" method="post" autocomplete="off">
+
+                            <div class="form-group has-feedback">
+                                <label class="control-label">Apostille / Attestation Number</label>
+                                <div id="wwgrp_documentID" class="wwgrp">
+                                    <div id="wwctrl_documentID" class="wwctrl">
+
+                                        <input type="text" name="documentID" value="9012106789" id="documentID" class="form-control input-sm" placeholder="Apostille / Attestation Number" /></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group has-feedback">
+                                <label class="control-label">Captcha</label>
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div id="wwgrp_captcha" class="wwgrp">
+                                                    <div id="wwctrl_captcha" class="wwctrl">
+
+                                                        <input type="text" name="captcha" value="SEHT123" id="captcha" class="form-control input-sm" placeholder="Captcha" /></div>
+                                                </div>
+                                            </td>
+                                            <td class="captach"><img id="captcha" src="Captcha.jpg" style="width: 125px; height: 38px;" /></td>
+                                            <td style="padding-right: 0px;">
+                                                <a id="refreshCaptcha" style="width: 10px ;height: 30px; cursor: pointer;"> 
+											<img alt="Refresh" src="img/refresh.png" style="width: 30px;" />
+										</a>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div>
+                                <table class="table" style="margin-top: 20px;">
+                                    <tbody>
+
+                                        <tr>
+                                            <td><input id="submitBtn" type="submit" class="btn btn-primary btn-block" value="Submit"></td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+
+                            <input type="hidden" name="struts.token.name" value="token" />
+                            <input type="hidden" name="token" value="1EQOG0FWC9U0UDPLKPHAL1XII1Q1NPLQ" />
+                            <input type="hidden" name="onlineView" value="" id="eregisterForm_onlineView" />
+
+                        </form>
+
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+<div class="panel-heading">
+<div class="col-xs-12 col-sm-8 col-md-8 col-sm-offset-2 col-md-offset-2">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title"><strong>
+							
+								Apostille Issuing Authority: 
+							
+							
+							</strong>SO(OI/Attestation), Ministry of External Affairs</h3>
+						</div>
+                <div class="panel-body">
+                <div id="no-more-tables">
+                   
+            	
+            	<table class="col-sm-12 table-bordered table-striped table-condensed cf" style="margin-bottom:10px;">
+							<tbody class="cf">
+								<tr>
+									
+										<th>Apostille Number</th>
+									
+									
+									<td data-title="Document ID">&nbsp;9012106789</td>
+									</tr>
+								<tr>
+									<th>Service</th>
+									<td data-title="Service">&nbsp;Apostile</td>
+									</tr>
+								<tr>
+									<th>Certificate</th>
+									<td data-title="Certificate">&nbsp;Diploma (Certificate / Marksheet / Provisional Certificate)</td>
+									</tr>
+								<tr>
+									<th>Applicant Name</th>
+									<td data-title="Name">&nbsp;YASHEER ALI</td>
+									</tr>
+								<tr>
+									<th>Passport Number</th>
+									<td data-title="Passport NO">&nbsp;A1234567</td>
+									</tr>
+								<tr>
+									<th>Nationality</th>
+									<td data-title="Nationality">&nbsp;INDIA</td>
+									</tr>
+								<tr>
+									<th>Status</th>
+									<td data-title="Status">&nbsp;Verified</td>
+									</tr>
+								
+								<tr>
+									
+										<th>Apostille Date</th>
+									
+									
+									<td data-title="Status Date">&nbsp;21-JAN-2025</td>
+								</tr>
+								<tr>
+									<th>Pre-Verified Authority</th>
+									<td data-title="Status">&nbsp;SHIKSHA TECHNICAL INSTITUTE </td>
+								</tr>
+							</tbody>
+						</table>
+						<ul style="padding-left:12px;font-size:13px;font-weight:700;">
+						<li style="font-size:10">This Apostille only certifies the authenticity of the signature and the capacity of the person who has signed the public document, and, where appropriate, the identity of the seal or stamp which the public document bears. 
+						 </li>
+						 <li> This Apostille does not certify the content of the document for which it was issued.</li>
+						</ul>
+            		</div>
+            	</div>
+            	</div>
+            </div>
+							
+
+
+    <footer>
+        <div class="container">
+            <div class="col-lg-3 col-xs-4">
+                <div class="wow fadeInLeft" data-wow-delay="0.1s">
+                    <div class="text-left">
+                        <p style="margin:0"><strong>Ministry of External Affairs</strong><br>
+                            <span class="responsive-hide">Government of India</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-xs-4" style="text-align:center; padding:0 ">
+                <div class="wow fadeInLeft" data-wow-delay="0.1s">
+                    <div class="">
+                        <a href="#"><img src="img/dummy/cbse-logoCol.png" height=50px;></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-sm-1">
+					
+					</div> -->
+            <div class="col-lg-2 col-xs-4 ">
+                <div class="wow fadeInLeft" data-wow-delay="0.1s">
+                    <div class="bootom_icon" style="float:right">
+                        <a href="#" style="float:right">
+									<img src="img/dummy/nic.png" class="responsive-hide">
+									<img src="img/dummy/nic.png" class="responsive-show" style="width: 100px; margin:10px">
+									</a>
+                        <!-- AS Added style -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5 col-xs-12">
+                <div class="wow fadeInRight" data-wow-delay="0.1s">
+                    <div class="responsive-font">
+                        <p><strong></>A Digital India Initiative by Government of India.</strong><br>
+                            <span>Copyright &copy; 2016 by NIC. Content provided by MEA.</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+
+    <!-- Core JavaScript Files -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="bootstrap-validator/bootstrapValidator.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            //alert(window.navigator.userAgent);
+            // Setting the bootstrap validations
+            $("#eregisterForm")
+                .bootstrapValidator({
+                    framework: 'bootstrap',
+                    feedbackIcons: {
+                        valid: 'glyphicon glyphicon-ok',
+                        invalid: 'glyphicon glyphicon-remove',
+                        validating: 'glyphicon glyphicon-refresh'
+                    },
+                    fields: {
+                        documentID: {
+                            validators: {
+                                regexp: {
+                                    regexp: /^[0-9\s]+$/,
+                                    message: 'Only numeric value is allowed.'
+                                },
+                                notEmpty: {
+                                    message: 'Document ID is required.'
+                                }
+                            }
+                        },
+                        captcha: {
+                            validators: {
+                                notEmpty: {
+                                    message: 'Captcha is required.'
+                                },
+                                regexp: {
+                                    regexp: /^[A-Z0-9]+$/,
+                                    message: 'Invalid Captcha.'
+                                }
+                            }
+                        }
+                    }
+                });
+
+            $('#refreshCaptcha').on('click', function(e) {
+                //alert('captcha');
+                $.ajax({
+                    type: "get",
+                    url: "Captcha.jpg", //this is my servlet                  
+                    success: function(data) {
+                        $(".captach").html(' <img src="Captcha.jpg?' + Math.random() + '" style="width: 125px;height: 38px;"/>');
+                    }
+                });
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>
